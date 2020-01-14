@@ -32,8 +32,7 @@ h1 {
 }
 
 #selfportrait {
-  float: right;
-  box-shadow: black 0px 0px 30px -5px;
+  box-shadow: rgb(218, 212, 212) 0px 0px 30px -5px;
   width: 150px;
 }
 
