@@ -1,0 +1,15 @@
+main {
+    display: grid;
+}
+
+main section {
+    background-color: #dddddd;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+}
+

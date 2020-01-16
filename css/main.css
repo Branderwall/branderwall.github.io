@@ -10,7 +10,7 @@ footer {
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  max-width: 750px;
+  max-width: 1000px;
   margin: 1rem auto;
 }
 
@@ -28,7 +28,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #selfportrait {
