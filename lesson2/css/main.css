@@ -9,6 +9,10 @@ main section {
     border-radius: 10px;
 }
 
+main section h3 {
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
