@@ -1,0 +1,10 @@
+@media (min-width: 32.5em) {
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+  
+    nav ul li {
+      flex: 1 1 100%;
+    }
+  }

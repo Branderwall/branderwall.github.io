@@ -1,27 +1,27 @@
 nav ul {
-    display: flex;
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li{
-    flex: 1 1 100%;
-}
-
 nav li a {
-    display: block;
-    background-color: #548393;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
+  display: block;
+  background-color: #548393;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
 }
 
 nav a:hover {
-    background-color: #375661;
+  background-color: #375661;
 }
 
-.hfont{
-font-family: 'Noto Sans JP', sans-serif;
+#logo {
+    width: 100px;
+}
+
+.hfont {
+  font-family: "Noto Sans JP", sans-serif;
 }
