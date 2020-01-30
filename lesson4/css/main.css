@@ -1,0 +1,96 @@
+/* 
+#2386BC Main Blue
+#056092 Dark Blue
+#013D5D Darker Blue
+#1BC57C Green Accent
+#DADEE0 Silver Accent 
+*/
+
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+  background-color: #285990;
+  color: #DADEE0;
+  text-align: center;
+  vertical-align: center;
+}
+
+header {
+  padding-top: 0.5rem;
+}
+
+footer {
+  padding: 0.5rem 0rem;
+}
+
+footer a {
+  color: #DADEE0;
+}
+
+nav {
+  background-color: #013d5d;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  background-color: #013d5d;
+  color: #DADEE0;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav a:hover {
+  background-color: #056092;
+}
+
+section {
+  background-color: #DADEE0;
+  border: 2px dashed darkgray;
+  margin: 15px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.navigation {
+    background-color: purple;
+}
+
+.responsive {
+    background-color: orange;
+}
+
+.fullwidth {
+  width: 100%;
+  display: block;
+  align-content: center;
+}
+
+.contentwidth {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#logo {
+  background-color: #DADEE0;
+  border-radius: 50px;
+  max-width: 100px;
+}
