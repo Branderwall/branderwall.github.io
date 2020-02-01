@@ -1,10 +1,20 @@
 /* 
 #2386BC Main Blue
+#285990 New Main Blue
 #056092 Dark Blue
 #013D5D Darker Blue
 #1BC57C Green Accent
 #DADEE0 Silver Accent 
 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans JP", sans-serif;
+}
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -16,10 +26,6 @@ footer {
   color: #dadee0;
   text-align: center;
   vertical-align: center;
-}
-
-header {
-  padding-top: 0.5rem;
 }
 
 footer {
@@ -34,19 +40,35 @@ nav {
   background-color: #013d5d;
 }
 
-section {
-  background-color: #dadee0;
-  border: 2px dashed darkgray;
-  margin: 15px 0px;
+h2 {
+  text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Noto Sans JP", sans-serif;
+.contentblock {
+  background-color: #dadee0;
+  margin: 15px 0px;
+  padding: 1rem;
+}
+
+.headstyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.headtext {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.headtext h1 {
+  margin: 0;
+}
+
+.headtext p {
+  margin: 0.5rem;
 }
 
 .navigation {
@@ -57,11 +79,11 @@ h6 {
 }
 
 .navigation li {
-    display: none;
+  display: none;
 }
 
 .navigation li:first-child {
-    display: block;
+  display: block;
 }
 
 .navigation li a {
@@ -77,8 +99,16 @@ h6 {
   background-color: #056092;
 }
 
+.navigation a:active {
+  background-color: #285990;
+}
+
 .responsive li {
   display: block;
+}
+
+.currentpage {
+  background-color: #285990;
 }
 
 .fullwidth {

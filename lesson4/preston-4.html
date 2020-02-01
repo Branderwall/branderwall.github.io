@@ -7,68 +7,72 @@
     <title>SilverLine Weather | Preston</title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="contentwidth">
+      <div class="contentwidth headstyle">
         <img
           id="logo"
           src="images/iconfinder_Cloud_4850498.svg"
           alt="cloud icon"
         />
-        <h1>SilverLine Weather</h1>
-        <p>Every Cloud Has A Silver Lining</p>
+
+        <div class="headtext">
+          <h1>SilverLine Weather</h1>
+          <p>Every Cloud Has Its Silver Lining</p>
         </div>
-        <nav class="fullwidth">
-            <div class="contentwidth">
-          <ul class="navigation">
-            <li>
-                <a href="#" onclick="toggleMenu()">&#9776; Menu</a>
-              </li>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="preston-4.html">Preston</a>
-            </li>
-            <li>
-              <a href="#">Soda Springs</a>
-            </li>
-            <li>
-                <a href="#">Fish Haven</a>
-              </li>
-              <li>
-                <a href="#">Storm Center</a>
-              </li>
-              <li>
-                <a href="#">Gallery</a>
-              </li>
-          </ul>
-          </div>
-        </nav>
-    
+      </div>
+      <nav class="fullwidth">
+        <ul class="contentwidth navigation">
+          <li>
+            <a href="#" onclick="toggleMenu()">&#9776; Menu</a>
+          </li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="preston-4.html">Preston</a>
+          </li>
+          <li>
+            <a href="#">Soda Springs</a>
+          </li>
+          <li>
+            <a href="#">Fish Haven</a>
+          </li>
+          <li>
+            <a href="#">Storm Center</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="contentwidth">
       <section>
         <h2>Preston Idaho</h2>
       </section>
-      <section>
+      <section class="contentblock">
         <p>Hero w/ weather summary</p>
       </section>
-      <section>
+      <section class="contentblock">
         <p>5 Day Forecast</p>
       </section>
-      <section>
-        <p>AArticle</p>
+      <section class="contentblock">
+        <p>Article</p>
       </section>
-      <section>
+      <section class="contentblock">
         <p>Contact Information</p>
       </section>
     </main>
@@ -79,7 +83,7 @@
           >BYUI Online Learning</a
         >
       </p>
-      <p>Current Date: <span id="currentdate"></span></p>
+      <p id="currentdate"></p>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/menu.js"></script>

@@ -9,4 +9,5 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 
 let currentDate = weekdays[day] + ", " + date + " " + months[month] + ", " + year;
 
+document.getElementById("currentyear").textContent = year;
 document.getElementById("currentdate").textContent = currentDate;
