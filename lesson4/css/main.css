@@ -6,7 +6,6 @@
 #DADEE0 Silver Accent 
 */
 
-
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
@@ -14,7 +13,7 @@ body {
 header,
 footer {
   background-color: #285990;
-  color: #DADEE0;
+  color: #dadee0;
   text-align: center;
   vertical-align: center;
 }
@@ -28,35 +27,15 @@ footer {
 }
 
 footer a {
-  color: #DADEE0;
+  color: #dadee0;
 }
 
 nav {
   background-color: #013d5d;
 }
 
-nav ul {
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li a {
-  display: block;
-  background-color: #013d5d;
-  color: #DADEE0;
-  text-decoration: none;
-  text-align: center;
-  padding: 1rem;
-}
-
-nav a:hover {
-  background-color: #056092;
-}
-
 section {
-  background-color: #DADEE0;
+  background-color: #dadee0;
   border: 2px dashed darkgray;
   margin: 15px 0px;
 }
@@ -71,11 +50,35 @@ h6 {
 }
 
 .navigation {
-    background-color: purple;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.responsive {
-    background-color: orange;
+.navigation li {
+    display: none;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li a {
+  display: block;
+  background-color: #013d5d;
+  color: #dadee0;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+.navigation a:hover {
+  background-color: #056092;
+}
+
+.responsive li {
+  display: block;
 }
 
 .fullwidth {
@@ -90,7 +93,7 @@ h6 {
 }
 
 #logo {
-  background-color: #DADEE0;
+  background-color: #dadee0;
   border-radius: 50px;
   max-width: 100px;
 }
