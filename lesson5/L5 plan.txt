@@ -1,0 +1,16 @@
+Display ad on Fridays across top
+
+hero picture
+floating weather summary
+
+article picture stacked in small view and floated in large
+
+no forecast in small
+no map in small
+
+use social images?
+use tel and email icons?
+
+no nav link word wrap
+
+wayfinder (active) style for current page
