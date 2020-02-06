@@ -199,11 +199,18 @@ article {
   border-right: 1px solid #013d5d;
 }
 
+
+
+.promo {
+  display: block;
+  background-color: #1BC57C;
+  color: white;
+  padding: 1rem;
+}
+
 .hidden {
   display: none;
 }
-
-
 
 #logo {
   background-color: #dadee0;
