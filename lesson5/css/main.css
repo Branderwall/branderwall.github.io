@@ -80,6 +80,10 @@ article {
   margin: 0.5rem;
 }
 
+.currentpage {
+  background-color: #285990;
+}
+
 .navigation {
   display: block;
   list-style-type: none;
@@ -97,7 +101,6 @@ article {
 
 .navigation li a {
   display: block;
-  background-color: #013d5d;
   color: #dadee0;
   text-decoration: none;
   text-align: center;
@@ -117,9 +120,7 @@ article {
 }
 
 
-.currentpage {
-  background-color: #285990;
-}
+
 
 .fullwidth {
   width: 100%;
@@ -166,13 +167,8 @@ article {
   margin: 1rem;
 }
 
-.contactinfo {
-  display: block;
-}
-
 .articleimg {
   display: block;
-  /* float: right; */
   width: 100%;
   margin: 1rem;
 }
@@ -202,9 +198,10 @@ article {
 
 
 .promo {
-  display: block;
+  /* display: block; */
   background-color: #1BC57C;
-  color: white;
+  color: #013D5D;
+  font-weight: bold;
   padding: 1rem;
 }
 
