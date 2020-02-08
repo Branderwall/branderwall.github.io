@@ -51,6 +51,7 @@ section {
 article {
   border: 1px solid #dadee0;
   padding: 1rem;
+  background-color:#dadee0;
 }
 
 .contentblock {
