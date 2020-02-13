@@ -21,9 +21,10 @@
   </head>
   <body>
     <header>
-      <div class="promo">
+      <div id="promo">
         <div class="contentwidth">
-          Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
         </div>
       </div>
       <div class="contentwidth headstyle">
@@ -48,6 +49,8 @@
           </li>
           <li>
             <a class="currentpage" href="preston-6.html">Preston</a>
+          </li>
+
           <li>
             <a href="#">Soda Springs</a>
           </li>
@@ -69,13 +72,26 @@
         <h2>Preston Idaho</h2>
       </section>
       <section class="herodiv">
-        <div class="heropic"></div>
+        <picture>
+          <source
+            media="(max-width: 32.5em)"
+            srcset="images/cit230_image_franklinOriginal-400-small-op.jpeg"
+          />
+          <source
+            media="(max-width: 60em)"
+            srcset="images/cit230_image_franklinOriginal-600-medium-op.jpeg"
+          />
+          <img
+            class="heropic"
+            src="images/cit230_image_franklinOriginal-1000-large-op.jpeg"
+          />
+        </picture>
         <div class="weathersummary">
           <h3>Weather Summary</h3>
           <hr />
           <p>Currently: Sunny</p>
-          <p>High: <span id="hightemp">54</span> &deg;F</p>
-          <p>Wind Chill: <span id="windchill">1</span> &deg;F</p>
+          <p>High: <span id="hightemp">50</span> &deg;F</p>
+          <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
           <p>Humidity: 10%</p>
           <p>Wind Speed: <span id="windspeed">12</span> mph</p>
         </div>

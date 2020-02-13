@@ -136,9 +136,9 @@ article {
 
 
 .heropic {
-  height: 300px;
-  background-image: url("../images/trees-1000.jpg");
-  background-color: green;
+  width: 100%;
+  /* background-image: url("../images/trees-1000.jpg"); */
+  /* background-color: green; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,18 +203,16 @@ article {
   border-right: 1px solid #013d5d;
 }
 
+/* .hidden {
+  display: none;
+} */
 
-
-.promo {
-  /* display: block; */
+#promo {
+  display: none;
   background-color: #1BC57C;
   color: #013D5D;
   font-weight: bold;
   padding: 1rem;
-}
-
-.hidden {
-  display: none;
 }
 
 #logo {
