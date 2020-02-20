@@ -1,7 +1,4 @@
-// old lazy load
-
 let imagesToLoad = document.querySelectorAll("img[data-src]");
-
 
 let loadImages = image => {
   image.setAttribute("src", image.getAttribute("data-src"));
@@ -13,8 +10,8 @@ let loadImages = image => {
 //Intersection Observer
 
 const imgOptions = {
-    threshold: 1.0,
-    rootmargin: "0px 0px 50px 0px"
+  threshold: 1,
+  rootmargin: "0px 0px 50px 0px"
 };
 
 if ("IntersectionObserver" in window) {

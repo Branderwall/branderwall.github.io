@@ -1,0 +1,9 @@
+@media (min-width: 32.5em) {
+    .forecast {
+        display: flex;
+      }
+    
+      .contactmap {
+        display: block;
+      }
+}
