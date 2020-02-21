@@ -59,6 +59,15 @@ figcaption {
   padding: 0.5rem 0;
 }
 
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
 .contentblock {
   background-color: #dadee0;
   margin: 15px 0px;
@@ -213,8 +222,8 @@ figcaption {
 
 .galleryitem {
   margin: 1rem 0;
-  /* background-color: orange; */
-  border: 1px solid #013D5D;
+  box-shadow: 0 0 10px -2px #555555;
+  /* filter: grayscale(50%); */
 }
 
 #promo {
