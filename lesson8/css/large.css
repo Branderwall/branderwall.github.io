@@ -1,0 +1,31 @@
+@media (min-width: 60em) {
+  .navigation {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .articleimg {
+    float: right;
+    max-width: 300px;
+    margin: 1rem;
+  }
+
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .galleryitem:hover {
+    box-shadow: 0 10px 30px -5px #285990;
+  }
+  
+}
