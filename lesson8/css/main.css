@@ -68,6 +68,33 @@ figure img {
   transition: filter 0.5s;
 }
 
+form {
+  display: grid;
+  max-width: 500px;
+  margin: auto;
+  padding: 0 2em;
+}
+
+form label {
+  display: grid;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+form input, select {
+  border-radius: 5px;
+  margin-top: 0.5em;
+  padding: 0.25em;
+}
+
+.requiredform {
+  color: red;
+}
+
+.forminline {
+  display: inline-block;
+}
+
 .contentblock {
   background-color: #dadee0;
   margin: 15px 0px;
@@ -144,7 +171,6 @@ figure img {
   max-width: 1000px;
   margin: auto;
 }
-
 
 .heropic {
   width: 100%;
@@ -223,7 +249,10 @@ figure img {
 .galleryitem {
   margin: 1rem 0;
   box-shadow: 0 0 10px -2px #555555;
-  /* filter: grayscale(50%); */
+}
+
+#formkey {
+  text-align: right;
 }
 
 #promo {

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Storm Center | A place where you can report storm live storm conditions."
+    />
+    <title>SilverLine Weather | Storm Center</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="promo">
+        <div class="contentwidth">
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
+        </div>
+      </div>
+      <div class="contentwidth headstyle">
+        <img
+          id="logo"
+          src="images/iconfinder_Cloud_4850498.svg"
+          alt="cloud icon"
+        />
+        <div class="headtext">
+          <h1>SilverLine Weather</h1>
+          <p>Every Cloud Has Its Silver Lining</p>
+        </div>
+      </div>
+      <nav class="fullwidth">
+        <ul class="contentwidth navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="preston-8.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a class="currentpage" href="gallery-8.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentwidth">
+      <section>
+        <h2>Storm Center</h2>
+        <form id="stormform" onsubmit="submitstormform()">
+            <p id="formkey"><span class="requiredform">*</span> Required fields</p>
+          <label for="fullname">
+            <span>Your full name <span class="requiredform">*</span></span>
+            <input type="text" id="fullname" name="fullname" pattern="[A-Za-z ]{5,}\w" required />
+          </label>
+          <label for="email">
+            Email
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </label>
+          <label for="phone">
+            <span>Phone number <span class="requiredform">*</span></span>
+            <input type="tel" id="phone" name="phone" required />
+          </label>
+          <label for="zipcode">
+            <span>Zip code <span class="requiredform">*</span></span>
+            <input type="number" id="zipcode" name="zipcode" required />
+          </label>
+          <label for="stormdate">
+            Storm date
+            <input type="date" id="stormdate" name="stormdate" />
+          </label>
+          <label for="stormtype">
+            Storm type
+            <input id="stormtype" list="stormlist" name="stormtype" />
+            <datalist id="stormlist">
+              <option value="Flash Flood"> </option>
+              <option value="Hail"> </option>
+              <option value="Hurricane"> </option>
+              <option value="Thunderstorm"> </option>
+              <option value="Tornado"> </option>
+            </datalist>
+          </label>
+          <label for="stormseverity">
+            Storm severity
+            <div class="forminline">
+              <input
+                type="range"
+                id="stormseverity"
+                name="stormseverity"
+                value="1"
+                min="1"
+                max="10"
+                onchange="severitySelector()"
+              />
+              <span id="stormseverityvalue">1</span>
+            </div>
+          </label>
+          <label for="stormregion">
+            Storm region
+            <select id="stormregion" name="stormregion">
+              <option selected="1" disabled>Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="sodasprings">Soda Springs</option>
+              <option value="fishhaven">Fish Haven</option>
+            </select>
+          </label>
+          <label for="dangerlevel">
+            User in-danger level
+            <div class="forminline">
+              <input
+                type="radio"
+                id="dangerlevel1"
+                name="dangerlevel"
+                value="yes"
+              />
+              <label for="dangerlevel1">Yes</label>
+            </div>
+            <div class="forminline">
+              <input
+                type="radio"
+                id="dangerlevel2"
+                name="dangerlevel"
+                value="maybe"
+              />
+              <label for="dangerlevel2">Maybe</label>
+            </div>
+            <div class="forminline">
+              <input
+                type="radio"
+                id="dangerlevel3"
+                name="dangerlevel"
+                value="no"
+              />
+              <label for="dangerlevel3">No</label>
+            </div>
+          </label>
+          <label for="comments">
+            Additional comments
+            <input type="textarea" id="comments" name="comments" height="50px" />
+          </label>
+          <input type="submit" id="submitstormform" name="submitstormform" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Adam J. Tan | California |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <p id="currentdate"></p>
+    </footer>
+    <script src="js/lazyload.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/promo.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/stormform.js"></script>
+  </body>
+</html>
