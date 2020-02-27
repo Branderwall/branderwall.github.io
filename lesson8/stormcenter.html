@@ -96,8 +96,8 @@
             </datalist>
           </label>
           <label for="stormseverity">
-            Storm severity
-            <div class="forminline">
+            Storm severity: <span id="stormseverityvalue">1</span>
+            <!-- <div class="forminline"> -->
               <input
                 type="range"
                 id="stormseverity"
@@ -107,21 +107,21 @@
                 max="10"
                 onchange="severitySelector()"
               />
-              <span id="stormseverityvalue">1</span>
-            </div>
+              
+            <!-- </div> -->
           </label>
           <label for="stormregion">
             Storm region
             <select id="stormregion" name="stormregion">
-              <option selected="1" disabled>Select Region...</option>
+              <option selected disabled>Select Region...</option>
               <option value="preston">Preston</option>
               <option value="sodasprings">Soda Springs</option>
               <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
-          <label for="dangerlevel">
-            User in-danger level
-            <div class="forminline">
+          <fieldset>
+            <legend>User in-danger level</legend>
+            <!-- <div class="forminline"> -->
               <input
                 type="radio"
                 id="dangerlevel1"
@@ -129,8 +129,8 @@
                 value="yes"
               />
               <label for="dangerlevel1">Yes</label>
-            </div>
-            <div class="forminline">
+            <!-- </div> -->
+            <!-- <div class="forminline"> -->
               <input
                 type="radio"
                 id="dangerlevel2"
@@ -138,8 +138,8 @@
                 value="maybe"
               />
               <label for="dangerlevel2">Maybe</label>
-            </div>
-            <div class="forminline">
+            <!-- </div> -->
+            <!-- <div class="forminline"> -->
               <input
                 type="radio"
                 id="dangerlevel3"
@@ -147,13 +147,13 @@
                 value="no"
               />
               <label for="dangerlevel3">No</label>
-            </div>
-          </label>
+            <!-- </div> -->
+          </fieldset>
           <label for="comments">
             Additional comments
             <textarea id="comments" name="comments" rows="4"></textarea>
           </label>
-          <input type="submit" id="submitstormform" name="submitstormform" />
+          <input type="submit" id="submitstormform" name="submitstormform" value="submit" />
         </form>
       </section>
     </main>
