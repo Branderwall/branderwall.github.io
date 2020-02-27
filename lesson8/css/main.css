@@ -51,7 +51,7 @@ section {
 article {
   border: 1px solid #dadee0;
   padding: 1rem;
-  background-color:#dadee0;
+  background-color: #dadee0;
 }
 
 figcaption {
@@ -81,18 +81,11 @@ form label {
   font-weight: bold;
 }
 
-form input, select {
+form input,
+select {
   border-radius: 5px;
   margin-top: 0.5em;
   padding: 0.25em;
-}
-
-.requiredform {
-  color: red;
-}
-
-.forminline {
-  display: inline-block;
 }
 
 .contentblock {
@@ -192,8 +185,7 @@ form input, select {
   left: 25px;
   padding: 1rem;
   background-color: rgba(40, 89, 144, 0.75);
-  text-shadow: 0px 0px 2px #013D5D;
-  
+  text-shadow: 0px 0px 2px #013d5d;
 }
 
 .contactblock {
@@ -251,14 +243,41 @@ form input, select {
   box-shadow: 0 0 10px -2px #555555;
 }
 
+/*********** Storm Center *************/
+
+.requiredform {
+  color: red;
+}
+
+.forminline {
+  display: inline;
+}
+
+.forminline label {
+  display: inline;
+}
+
+#stormseverityvalue {
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+#submitstormform {
+  height: 3em;
+  background-color: #1bc57c;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 #formkey {
   text-align: right;
 }
 
 #promo {
   display: none;
-  background-color: #1BC57C;
-  color: #013D5D;
+  background-color: #1bc57c;
+  color: #013d5d;
   font-weight: bold;
   padding: 1rem;
 }

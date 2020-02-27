@@ -57,7 +57,7 @@
     <main class="contentwidth">
       <section>
         <h2>Storm Center</h2>
-        <form id="stormform" onsubmit="submitstormform()">
+        <form id="stormform" action="thanks.html" method="POST">
             <p id="formkey"><span class="requiredform">*</span> Required fields</p>
           <label for="fullname">
             <span>Your full name <span class="requiredform">*</span></span>
@@ -151,7 +151,7 @@
           </label>
           <label for="comments">
             Additional comments
-            <input type="textarea" id="comments" name="comments" height="50px" />
+            <textarea id="comments" name="comments" rows="4"></textarea>
           </label>
           <input type="submit" id="submitstormform" name="submitstormform" />
         </form>
