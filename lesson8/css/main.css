@@ -246,7 +246,7 @@ select {
 /*********** Storm Center *************/
 
 .requiredform {
-  color:#B80000;
+  color: #b80000;
   font-weight: bold;
 }
 
@@ -267,6 +267,8 @@ select {
 }
 
 #dangerlevel {
+  display: grid;
+  border: none;
   margin-bottom: 1em;
 }
 
@@ -287,5 +289,3 @@ select {
   border-radius: 50px;
   max-width: 100px;
 }
-
-
