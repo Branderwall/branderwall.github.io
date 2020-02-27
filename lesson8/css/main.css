@@ -260,10 +260,10 @@ select {
   display: inline;
 }
 
-#stormseverityvalue {
+/* #stormseverityvalue {
   line-height: 1.5;
   vertical-align: middle;
-}
+} */
 
 #submitstormform {
   height: 3em;

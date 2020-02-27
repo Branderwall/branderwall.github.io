@@ -119,9 +119,9 @@
               <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
-          <fieldset>
-            <legend>User in-danger level</legend>
-            <!-- <div class="forminline"> -->
+          <label for="dangerlevel">User in-danger level</label>
+            <fieldset id="dangerlevel" style="border: none; display: grid;">
+            <div class="forminline">
               <input
                 type="radio"
                 id="dangerlevel1"
@@ -129,8 +129,8 @@
                 value="yes"
               />
               <label for="dangerlevel1">Yes</label>
-            <!-- </div> -->
-            <!-- <div class="forminline"> -->
+            </div>
+            <div class="forminline">
               <input
                 type="radio"
                 id="dangerlevel2"
@@ -138,8 +138,8 @@
                 value="maybe"
               />
               <label for="dangerlevel2">Maybe</label>
-            <!-- </div> -->
-            <!-- <div class="forminline"> -->
+            </div>
+            <div class="forminline">
               <input
                 type="radio"
                 id="dangerlevel3"
@@ -147,8 +147,9 @@
                 value="no"
               />
               <label for="dangerlevel3">No</label>
-            <!-- </div> -->
+            </div>
           </fieldset>
+        
           <label for="comments">
             Additional comments
             <textarea id="comments" name="comments" rows="4"></textarea>
