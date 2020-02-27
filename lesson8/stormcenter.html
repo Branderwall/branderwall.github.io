@@ -48,7 +48,9 @@
           <li><a href="preston-8.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
-          <li><a class="currentpage" href="stormcenter.html">Storm Center</a></li>
+          <li>
+            <a class="currentpage" href="stormcenter.html">Storm Center</a>
+          </li>
           <li><a href="gallery-8.html">Gallery</a></li>
         </ul>
       </nav>
@@ -58,10 +60,18 @@
       <section>
         <h2>Storm Center</h2>
         <form id="stormform" action="thanks.html" method="POST">
-            <p id="formkey"><span class="requiredform">*</span> Required fields</p>
+          <p id="formkey">
+            <span class="requiredform">*</span> Required fields
+          </p>
           <label for="fullname">
             <span>Your full name <span class="requiredform">*</span></span>
-            <input type="text" id="fullname" name="fullname" pattern="[A-Za-z ]{5,}\w" required />
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              pattern="[A-Za-z ]{5,}\w"
+              required
+            />
           </label>
           <label for="email">
             Email
@@ -96,19 +106,16 @@
             </datalist>
           </label>
           <label for="stormseverity">
-            Storm severity: <span id="stormseverityvalue">1</span>
-            <!-- <div class="forminline"> -->
-              <input
-                type="range"
-                id="stormseverity"
-                name="stormseverity"
-                value="1"
-                min="1"
-                max="10"
-                onchange="severitySelector()"
-              />
-              
-            <!-- </div> -->
+            <span>Storm severity: <span id="stormseverityvalue">1</span></span>
+            <input
+              type="range"
+              id="stormseverity"
+              name="stormseverity"
+              value="1"
+              min="1"
+              max="10"
+              onchange="severitySelector()"
+            />
           </label>
           <label for="stormregion">
             Storm region
@@ -119,8 +126,11 @@
               <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
-          <label for="dangerlevel">User in-danger level</label>
-            <fieldset id="dangerlevel" style="border: none; display: grid;">
+          <!-- <label for="dangerlevel">User in-danger level</label> -->
+          <b>User in-danger level</b>
+          
+          <fieldset id="dangerlevel" style="border: none; display: grid;">
+            <legend></legend>
             <div class="forminline">
               <input
                 type="radio"
@@ -149,12 +159,17 @@
               <label for="dangerlevel3">No</label>
             </div>
           </fieldset>
-        
+
           <label for="comments">
             Additional comments
             <textarea id="comments" name="comments" rows="4"></textarea>
           </label>
-          <input type="submit" id="submitstormform" name="submitstormform" value="submit" />
+          <input
+            type="submit"
+            id="submitstormform"
+            name="submitstormform"
+            value="submit"
+          />
         </form>
       </section>
     </main>

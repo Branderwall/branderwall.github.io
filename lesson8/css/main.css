@@ -246,8 +246,7 @@ select {
 /*********** Storm Center *************/
 
 .requiredform {
-  /* color: #A30000; */
-  color: red;
+  color:#B80000;
   font-weight: bold;
   text-shadow: 0 0 1px black;
 }
