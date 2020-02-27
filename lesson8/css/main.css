@@ -248,7 +248,6 @@ select {
 .requiredform {
   color:#B80000;
   font-weight: bold;
-  text-shadow: 0 0 1px black;
 }
 
 .forminline {
@@ -258,11 +257,6 @@ select {
 .forminline label {
   display: inline;
 }
-
-/* #stormseverityvalue {
-  line-height: 1.5;
-  vertical-align: middle;
-} */
 
 #submitstormform {
   height: 3em;
