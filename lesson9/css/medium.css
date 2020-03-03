@@ -1,0 +1,14 @@
+/* @media (min-width: 32.5em) { */
+  @media (min-width: 650px) {
+    .forecast {
+        display: flex;
+      }
+    
+      .contactmap {
+        display: block;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+}

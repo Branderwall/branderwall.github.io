@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Storm Center | A place where you can report storm live storm conditions."
+    />
+    <title>SilverLine Weather | Storm Center</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="promo">
+        <div class="contentwidth">
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
+        </div>
+      </div>
+      <div class="contentwidth headstyle">
+        <img
+          id="logo"
+          src="images/iconfinder_Cloud_4850498.svg"
+          alt="cloud icon"
+        />
+        <div class="headtext">
+          <h1>SilverLine Weather</h1>
+          <p>Every Cloud Has Its Silver Lining</p>
+        </div>
+      </div>
+      <nav class="fullwidth">
+        <ul class="contentwidth navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="preston-8.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentwidth">
+      <section>
+        <h2>Thank you for your submission!</h2>
+        <p style="text-align: center;">
+          It is thanks to people like you that we can provide the most
+          up-to-date weather data for everyone.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Adam J. Tan | California |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <p id="currentdate"></p>
+    </footer>
+    <script src="js/lazyload.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/promo.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

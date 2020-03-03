@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="SilverLine Weather - Preston" />
+    <title>SilverLine Weather | Preston</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="promo">
+        <div class="contentwidth">
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
+        </div>
+      </div>
+      <div class="contentwidth headstyle">
+        <img
+          id="logo"
+          src="images/iconfinder_Cloud_4850498.svg"
+          alt="cloud icon"
+        />
+
+        <div class="headtext">
+          <h1>SilverLine Weather</h1>
+          <p>Every Cloud Has Its Silver Lining</p>
+        </div>
+      </div>
+      <nav class="fullwidth">
+        <ul class="contentwidth navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a class="currentpage" href="preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentwidth">
+      <section>
+        <h2>Preston Idaho</h2>
+      </section>
+      <section class="herodiv">
+        <picture>
+          <source
+            media="(max-width: 32.5em)"
+            srcset="images/trees-400.jpg"
+          />
+          <source
+            media="(max-width: 60em)"
+            srcset="images/trees-600.jpg"
+          />
+          <img
+            class="heropic"
+            src="images/trees-1000.jpg"
+            alt="blue sky over green land"
+          />
+        </picture>
+        <div class="weathersummary">
+          <h3>Weather Summary</h3>
+          <hr />
+          <p>Currently: Sunny</p>
+          <p>High: <span id="hightemp">50</span> &deg;F</p>
+          <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
+          <p>Humidity: 10%</p>
+          <p>Wind Speed: <span id="windspeed">12</span> mph</p>
+        </div>
+      </section>
+      <section class="forecast">
+        <h2>5 Day Forecast</h2>
+        <div class="forecastlist">
+          <div class="forecastitem">
+            <h2>Mon</h2>
+            <h2>&#x2600;</h2>
+            <p>Sunny</p>
+          </div>
+          <div class="forecastitem">
+            <h2>Tue</h2>
+            <h2>&#x2600;</h2>
+            <p>Sunny</p>
+          </div>
+          <div class="forecastitem">
+            <h2>Wed</h2>
+            <h2>&#x2600;</h2>
+            <p>Sunny</p>
+          </div>
+          <div class="forecastitem">
+            <h2>Thu</h2>
+            <h2>&#x2600;</h2>
+            <p>Sunny</p>
+          </div>
+          <div class="forecastitem">
+            <h2>Fri</h2>
+            <h2>&#x2600;</h2>
+            <p>Sunny</p>
+          </div>
+        </div>
+      </section>
+      <article>
+        <img
+          src="images/overlook-1000.jpg"
+          class="articleimg"
+          alt="woman overlooking valley of trees"
+        />
+        <h3>Weather Article</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          deserunt ab nostrum repellat ullam architecto facilis accusantium!
+          Veritatis perferendis reprehenderit beatae veniam magni asperiores id.
+          Voluptate assumenda nam beatae consequatur?
+        </p>
+        <p>
+          Sit culpa voluptatibus maxime deleniti voluptates ullam eligendi
+          quaerat suscipit. Nihil pariatur, in cumque libero, necessitatibus
+          deserunt debitis excepturi ullam porro nulla ipsum? Voluptas
+          voluptatum laudantium ad illum reprehenderit vel.
+        </p>
+        <p>
+          Sint eos unde rem consectetur at dolorem. Beatae quo placeat,
+          consequatur eum voluptates architecto expedita modi repellat. Animi
+          blanditiis eos autem asperiores quibusdam perspiciatis velit, aliquam
+          possimus totam tempore magni! Iusto dicta consectetur tempore tenetur
+          autem voluptatum corporis vero, recusandae quaerat doloremque ipsum
+          maiores maxime atque quia cupiditate sint reiciendis labore odit.
+          Distinctio optio architecto amet perferendis, fuga sint quaerat.
+        </p>
+        <p>
+          Commodi suscipit totam sed repudiandae pariatur. Dolor soluta voluptas
+          harum facilis maiores vel suscipit, repellat laborum doloribus dolores
+          aut obcaecati magnam sit ducimus magni nostrum repudiandae placeat a
+          omnis amet.
+        </p>
+      </article>
+
+      <section class="contactblock">
+        <div class="contactmap">
+          <img src="images/prestonmap.jpg" alt="preston map" />
+        </div>
+        <div class="contactinfo">
+          <h3>Contact</h3>
+          <p>&phone; Tel: 999.999.9999</p>
+          <p>&#9993; Email: contact@silverlineweather.com</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Adam J. Tan | California |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <p id="currentdate"></p>
+    </footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/promo.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

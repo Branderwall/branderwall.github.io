@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="SilverLine Weather - Gallery" />
+    <title>SilverLine Weather | Gallery</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="promo">
+        <div class="contentwidth">
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion.
+        </div>
+      </div>
+      <div class="contentwidth headstyle">
+        <img
+          id="logo"
+          src="images/iconfinder_Cloud_4850498.svg"
+          alt="cloud icon"
+        />
+
+        <div class="headtext">
+          <h1>SilverLine Weather</h1>
+          <p>Every Cloud Has Its Silver Lining</p>
+        </div>
+      </div>
+      <nav class="fullwidth">
+        <ul class="contentwidth navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a class="currentpage" href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentwidth">
+      <section>
+        <h2>Gallery</h2>
+      </section>
+      <div class="gallery">
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/lightning-300.jpg" alt="lightning">
+            <figcaption>Lightning</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/foggy-300.jpg" alt="fog">
+            <figcaption>Fog</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/rain-300.jpg" alt="rain">
+            <figcaption>Rain</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/snow-300.jpg" alt="snow">
+            <figcaption>Snow</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/tornado-300.jpg" alt="tornado">
+            <figcaption>Tornado</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/stormfront-300.jpg" alt="storm front">
+            <figcaption>Storm Front</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/hurricane-300.jpg" alt="hurricane">
+            <figcaption>Hurricane</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/tropical-300.jpg" alt="humid">
+            <figcaption>Humid</figcaption>
+        </figure>
+        <figure class="galleryitem">
+            <img src="https://via.placeholder.com/300x200.jpg?text=Placeholder" data-src="images/gallery/desert-300.jpg" alt="hot">
+            <figcaption>Hot</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Adam J. Tan | California |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <p id="currentdate"></p>
+    </footer>
+    <script src="js/lazyload.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/promo.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>
