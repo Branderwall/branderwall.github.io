@@ -27,5 +27,23 @@
   .galleryitem:hover {
     box-shadow: 0 10px 30px -5px #285990;
   }
+
+
+  .towncard {
+    flex-direction: column;
+  }
+
+  .towncard:nth-child(even) {
+    flex-direction: column;
+  }
+
+  #towncards {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .towncardimg, .desc {
+    width: 100%;
+  }
   
 }

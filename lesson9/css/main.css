@@ -289,3 +289,32 @@ select {
   border-radius: 50px;
   max-width: 100px;
 }
+
+#towncards {
+  display: grid;
+  text-align: center;
+}
+
+.desc {
+  padding: 0.5em;
+}
+
+.towncard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #2386BC;
+  color: white;
+  margin: 1em;
+}
+
+.towncardimg {
+  width: 100%
+}
+
+.wireframes {
+  max-width: 300px;
+  margin: auto;
+}
+

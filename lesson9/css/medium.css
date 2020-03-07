@@ -11,4 +11,16 @@
       .gallery {
         grid-template-columns: 1fr 1fr;
       }
+
+      .towncardimg, .desc {
+        width: 50%;
+      }
+
+      .towncard {
+        flex-direction: row;
+      }
+
+      .towncard:nth-child(even) {
+        flex-direction: row-reverse;
+      }
 }

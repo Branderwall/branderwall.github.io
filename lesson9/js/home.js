@@ -5,16 +5,22 @@ fetch(requestURL)
     return response.json();
   })
   .then(function(jsonObject) {
-    console.table(jsonObject);
+    // console.table(jsonObject);
     const towndata = jsonObject["towns"];
 
-    let towns = towndata.map(town => {
-      town.name == "Preston" || "Soda Springs" || "Fish Haven";
-      return town;
+    let townstuff = towndata.filter(town => {
+      if (
+        town.name == "Preston" ||
+        town.name == "Soda Springs" ||
+        town.name == "Fish Haven"
+      ) {
+        return town;
+      }
     });
 
-    towns.foreach(town => {
+    townstuff.map(town => {
       let card = document.createElement("section");
+      let desc = document.createElement("div");
       let h2 = document.createElement("h2");
       let h3 = document.createElement("h3");
       let founded = document.createElement("p");
@@ -22,19 +28,24 @@ fetch(requestURL)
       let rainfall = document.createElement("p");
       let image = document.createElement("img");
 
+      card.setAttribute("class", "towncard");
+      desc.setAttribute("class", "desc");
       h2.textContent = town.name;
       h3.textContent = town.motto;
-      founded.textContent = town.yearFounded;
-      population.textContent = town.currentPopulation;
-      rainfall.textContent = town.averageRainfall;
-      image.setAttribute("src", town.photo);
+      founded.textContent = "Year Founded: " + town.yearFounded;
+      population.textContent = "Population: " + town.currentPopulation;
+      rainfall.textContent = "Annual Rainfall: " + town.averageRainfall;
+      image.setAttribute("src", "images/" + town.photo.slice(0, -4) + "-560.jpg");
+      image.setAttribute("alt", "Scenic " + town.name);
+      image.setAttribute("class", "towncardimg");
 
-      card.appendChild(h2);
-      card.appendChild(h3);
-      card.appendChild(founded);
-      card.appendChild(population);
-      card.appendChild(rainfall);
+      desc.appendChild(h2);
+      desc.appendChild(h3);
+      desc.appendChild(founded);
+      desc.appendChild(population);
+      desc.appendChild(rainfall);
+      card.appendChild(desc);
       card.appendChild(image);
-      document.querySelector("div.towncards").appendChild(card);
+      document.querySelector("div#towncards").appendChild(card);
     });
   });
