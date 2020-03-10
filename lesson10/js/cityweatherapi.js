@@ -35,49 +35,32 @@ const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 fetch(forecastapiURL)
   .then(response => response.json())
   .then(jsObject => {
-    console.log(jsObject);
-
     let forecastfive = jsObject.list.filter(forecast => {
       return forecast.dt_txt.includes("18:00:00");
     });
 
-    // document.getElementById("forecastlist").innerHTML = 
-    
-    forecastfive.forEach(
-      cast => {
-        let date = new Date(cast.dt_txt).getDay();
-        let day = week[date];
-        let desc = cast.weather[0].description;
-        let imagesrc =
-          "https://openweathermap.org/img/w/" + cast.weather[0].icon + ".png";
+    forecastfive.forEach(cast => {
+      let date = new Date(cast.dt_txt).getDay();
+      let day = week[date];
+      let desc = cast.weather[0].description;
+      let imagesrc =
+        "https://openweathermap.org/img/w/" + cast.weather[0].icon + ".png";
 
-        let card = document.createElement("div");
-        card.setAttribute("class", "forecastitem");
-        let h2 = document.createElement("h2");
-        h2.textContent = day;
-        let status = document.createElement("p");
-        status.textContent = desc;
-        status.setAttribute("class", "forecaststatus");
-        let icon = document.createElement("img");
-        icon.setAttribute("src", imagesrc);
-        icon.setAttribute("alt", desc);
+      let card = document.createElement("div");
+      card.setAttribute("class", "forecastitem");
+      let h2 = document.createElement("h2");
+      h2.textContent = day;
+      let status = document.createElement("p");
+      status.textContent = desc;
+      status.setAttribute("class", "forecaststatus");
+      let icon = document.createElement("img");
+      icon.setAttribute("src", imagesrc);
+      icon.setAttribute("alt", desc);
 
-        card.appendChild(h2);
-        card.appendChild(icon);
-        card.appendChild(status);
+      card.appendChild(h2);
+      card.appendChild(icon);
+      card.appendChild(status);
 
-        document.querySelector("div#forecastlist").appendChild(card);
-      }
-    );
-
-    // <div class="forecastitem">
-    //   <h2>Mon</h2>
-    //   <h2>&#x2600;</h2>
-    //   <p>Sunny</p>
-    // </div>;
-
-    // 5 day forecast
-    // day of week
-    // icon
-    // temp forecast at 18:00:00
+      document.querySelector("div#forecastlist").appendChild(card);
+    });
   });
