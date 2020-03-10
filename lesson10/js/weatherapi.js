@@ -15,12 +15,5 @@ fetch(apiURL)
     document.getElementById("imagesrc").textContent = imagesrc;
     document.getElementById("icon").setAttribute("src", imagesrc);
     document.getElementById("icon").setAttribute("alt", desc);
-
-    // weather description
-
-    // textContent imagesrc to document
-    // src = id of icon
-    // alt = ?
-
-
 });
+

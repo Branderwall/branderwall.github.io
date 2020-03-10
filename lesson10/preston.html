@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="SilverLine Weather - Preston" />
+    <meta name="cityid" content="5604473" />
     <title>SilverLine Weather | Preston</title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -58,14 +59,8 @@
       </section>
       <section class="herodiv">
         <picture>
-          <source
-            media="(max-width: 32.5em)"
-            srcset="images/trees-400.jpg"
-          />
-          <source
-            media="(max-width: 60em)"
-            srcset="images/trees-600.jpg"
-          />
+          <source media="(max-width: 32.5em)" srcset="images/trees-400.jpg" />
+          <source media="(max-width: 60em)" srcset="images/trees-600.jpg" />
           <img
             class="heropic"
             src="images/trees-1000.jpg"
@@ -75,17 +70,17 @@
         <div class="weathersummary">
           <h3>Weather Summary</h3>
           <hr />
-          <p>Currently: Sunny</p>
-          <p>High: <span id="hightemp">50</span> &deg;F</p>
+          <p>Currently: <span id="status"></span></p>
+          <p>High: <span id="hightemp"></span> &deg;F</p>
           <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
-          <p>Humidity: 10%</p>
-          <p>Wind Speed: <span id="windspeed">12</span> mph</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="windspeed"></span> mph</p>
         </div>
       </section>
       <section class="forecast">
         <h2>5 Day Forecast</h2>
-        <div class="forecastlist">
-          <div class="forecastitem">
+        <div id="forecastlist">
+          <!-- <div class="forecastitem">
             <h2>Mon</h2>
             <h2>&#x2600;</h2>
             <p>Sunny</p>
@@ -109,7 +104,7 @@
             <h2>Fri</h2>
             <h2>&#x2600;</h2>
             <p>Sunny</p>
-          </div>
+          </div> -->
         </div>
       </section>
       <article>
@@ -167,11 +162,17 @@
         >
       </p>
       <p id="currentdate"></p>
+      <p>
+        Weather Data provided by:
+        <a href="https://OpenWeatherMap.org" target="_blank"
+          >OpenWeatherMap.org</a
+        >
+      </p>
     </footer>
 
     <script src="js/currentdate.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/promo.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/cityweatherapi.js"></script>
   </body>
 </html>

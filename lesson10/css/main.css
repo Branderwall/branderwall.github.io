@@ -214,7 +214,7 @@ select {
   text-align: center;
 }
 
-.forecastlist {
+#forecastlist {
   display: flex;
   flex-direction: row;
   flex: 1 1 100%;
@@ -230,6 +230,10 @@ select {
 
 .forecastitem:last-child {
   border-right: 1px solid #013d5d;
+}
+
+.forecaststatus {
+  text-transform: capitalize;
 }
 
 .gallery {
@@ -318,3 +322,7 @@ select {
   margin: auto;
 }
 
+
+#status {
+  text-transform: capitalize;
+}
