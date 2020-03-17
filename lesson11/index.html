@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="SilverLine Weather" />
+    <title>SilverLine Weather | Home</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/home.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="contentwidth headstyle">
+        <img
+          id="logo"
+          src="images/iconfinder_Cloud_4850498.svg"
+          alt="cloud icon"
+        />
+
+        <div class="headtext">
+          <h1>SilverLine Weather</h1>
+          <p>Every Cloud Has Its Silver Lining</p>
+        </div>
+      </div>
+      <nav class="fullwidth">
+        <ul class="contentwidth navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a class="currentpage" href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contentwidth">
+      <div id="towncards"></div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Adam J. Tan | California |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+      </p>
+      <p id="currentdate"></p>
+    </footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/promo.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

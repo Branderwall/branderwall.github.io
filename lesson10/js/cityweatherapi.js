@@ -35,6 +35,7 @@ const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 fetch(forecastapiURL)
   .then(response => response.json())
   .then(jsObject => {
+    console.log(jsObject);
     let forecastfive = jsObject.list.filter(forecast => {
       return forecast.dt_txt.includes("18:00:00");
     });
