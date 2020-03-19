@@ -167,7 +167,6 @@ select {
 .heropic {
   width: 100%;
   background-image: url("../images/trees-1000.jpg");
-  background-color: green;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -198,7 +197,8 @@ select {
 
 .contactmap {
   display: none;
-  margin: 1rem;
+  padding: 1rem;
+  width: 50%;
 }
 
 .contactmap img {
@@ -229,6 +229,7 @@ select {
   border-left: 3px solid #013d5d;
   border-bottom: 3px solid #013d5d;
   padding: 1rem;
+  background-color: #dadee0;
   max-width: 150px;
   min-width: 100px;
 }
