@@ -1,5 +1,4 @@
 /* 
-#2386BC Main Blue
 #285990 New Main Blue
 #056092 Dark Blue
 #013D5D Darker Blue
@@ -193,6 +192,10 @@ select {
   flex: 1 1 100%;
 }
 
+.contactinfo {
+  padding: 1em;
+}
+
 .contactmap {
   display: none;
   margin: 1rem;
@@ -222,14 +225,16 @@ select {
 }
 
 .forecastitem {
-  border-top: 1px solid #013d5d;
-  border-left: 1px solid #013d5d;
-  border-bottom: 1px solid #013d5d;
+  border-top: 3px solid #013d5d;
+  border-left: 3px solid #013d5d;
+  border-bottom: 3px solid #013d5d;
   padding: 1rem;
+  max-width: 150px;
+  min-width: 100px;
 }
 
 .forecastitem:last-child {
-  border-right: 1px solid #013d5d;
+  border-right: 3px solid #013d5d;
 }
 
 .forecaststatus {
@@ -292,6 +297,7 @@ select {
   background-color: #dadee0;
   border-radius: 50px;
   max-width: 100px;
+  height: 100px;
 }
 
 #towncards {
@@ -319,4 +325,15 @@ select {
 
 #status {
   text-transform: capitalize;
+}
+
+.events {
+  padding: 1em;
+  background-color: #285990;
+  color: #dadee0;
+  border: 10px double white;
+}
+
+#eventlist {
+  text-align: center;
 }

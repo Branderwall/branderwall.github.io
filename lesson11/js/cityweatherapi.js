@@ -47,10 +47,14 @@ fetch(forecastapiURL)
       let imagesrc =
         "https://openweathermap.org/img/w/" + cast.weather[0].icon + ".png";
 
+      let temperature = cast.main.temp.toFixed(0);
+
       let card = document.createElement("div");
       card.setAttribute("class", "forecastitem");
       let h2 = document.createElement("h2");
       h2.textContent = day;
+      let temp = document.createElement("p"); 
+      temp.textContent = temperature + "°F"; 
       let status = document.createElement("p");
       status.textContent = desc;
       status.setAttribute("class", "forecaststatus");
@@ -60,6 +64,7 @@ fetch(forecastapiURL)
 
       card.appendChild(h2);
       card.appendChild(icon);
+      card.appendChild(temp);
       card.appendChild(status);
 
       document.querySelector("div#forecastlist").appendChild(card);

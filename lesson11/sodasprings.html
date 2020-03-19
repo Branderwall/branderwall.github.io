@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="SilverLine Weather - Soda Springs" />
     <meta name="cityid" content="5607916" />
+    <meta name="cityname" content="Soda Springs" />
     <title>SilverLine Weather | Soda Springs</title>
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -29,11 +30,11 @@
         </div>
       </div>
       <div class="contentwidth headstyle">
-        <img
+        <a href="index.html"><img
           id="logo"
           src="images/iconfinder_Cloud_4850498.svg"
           alt="cloud icon"
-        />
+        /></a>
 
         <div class="headtext">
           <h1>SilverLine Weather</h1>
@@ -80,6 +81,10 @@
       <section class="forecast">
         <h2>5 Day Forecast</h2>
         <div id="forecastlist"></div>
+      </section>
+      <section class="events">
+        <h2>Local Events</h2>
+        <div id="eventlist"></div>
       </section>
       <article>
         <img
@@ -148,5 +153,6 @@
     <script src="js/menu.js"></script>
     <script src="js/promo.js"></script>
     <script src="js/cityweatherapi.js"></script>
+    <script src="js/localevents.js"></script>
   </body>
 </html>
