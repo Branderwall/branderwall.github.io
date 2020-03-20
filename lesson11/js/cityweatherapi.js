@@ -45,7 +45,7 @@ fetch(forecastapiURL)
       let day = week[date];
       let desc = cast.weather[0].description;
       let imagesrc =
-        "https://openweathermap.org/img/w/" + cast.weather[0].icon + ".png";
+        "https://openweathermap.org/img/wn/" + cast.weather[0].icon + ".png";
 
       let temperature = cast.main.temp.toFixed(0);
 
