@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salmon River Adventures | Home</title>
-    <mets name="descrpition" content="Welcome to Salmon River Adventures! The best river rafting company on the Salmon River.">
-</head>
-<body>
+    <meta
+      name="descrpition"
+      content="Welcome to Salmon River Adventures! The best river rafting company on the Salmon River."
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="contentwidth">
-        <img src="" alt="logo">
-        <h2>Salmon River Adventures</h2>
-    </div>
+      <div class="contentWidth">
+        <div style="display: flex; flex-direction:row;">
+          <a href="index.html"><img src="images/logo_white.gif" alt="logo" /></a>
+          <h1>Salmon River <br />Adventures</h1>
+        </div>
+        <nav class="fullwidth">
+          <ul class="contentWidth navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a class="currentpage" href="index.html">Home</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">River Guides</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        
+      <div class="contentWidth">
+        <img />
+        <h2>This is the end of the world</h2>
+      </div>
     </main>
 
-    <footer></footer>
-</body>
+    <footer>
+      <div class="contentWidth">
+        &copy;2020 Adam J. Tan | BYUI-Online
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
 </html>
