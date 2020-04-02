@@ -391,14 +391,14 @@ template {
 
 header,
 footer {
-  display: flex;
   background-color: #315195;
   color: #ffffff; }
 
 header {
   padding-top: 1rem; }
   header img {
-    max-width: 100px; }
+    max-width: 100px;
+    margin-right: 1rem; }
 
 footer {
   padding: 1rem 0; }
@@ -409,7 +409,11 @@ h3,
 h4,
 h5,
 h5 {
-  font-family: "Permanent Marker", cursive; }
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100; }
+
+h1 {
+  font-size: 2.5em; }
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -428,14 +432,19 @@ nav {
   display: block;
   align-content: center; }
 
-.contentWidth {
+.headstyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0; }
+
+.contentwidth {
   max-width: 1000px;
   margin: auto; }
 
 .navigation {
   display: block;
   list-style-type: none;
-  margin: 0;
   padding: 0; }
   .navigation li {
     display: none; }
@@ -454,3 +463,19 @@ nav {
 
 .responsive li {
   display: block; }
+
+.contactsection {
+  display: block; }
+
+@media only screen and (min-width: 560px) {
+  .contactsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+@media only screen and (min-width: 1028px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .navigation li {
+      display: block; }
+    .navigation li:first-child {
+      display: none; } }

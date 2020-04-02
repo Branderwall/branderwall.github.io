@@ -1,6 +1,5 @@
 header,
 footer {
-  display: flex;
   background-color: $blue;
   color: $white;
 }
@@ -9,6 +8,7 @@ header {
   padding-top: 1rem;
   img {
     max-width: 100px;
+    margin-right: 1rem;
   }
 }
 
@@ -23,6 +23,11 @@ h4,
 h5,
 h5 {
   font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2.5em;
 }
 
 body {
@@ -47,7 +52,14 @@ nav {
   align-content: center;
 }
 
-.contentWidth {
+.headstyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.contentwidth {
   max-width: 1000px;
   margin: auto;
 }
@@ -55,7 +67,6 @@ nav {
 .navigation {
   display: block;
   list-style-type: none;
-  margin: 0;
   padding: 0;
   li {
     display: none;
@@ -81,3 +92,8 @@ nav {
 .responsive li {
   display: block;
 }
+
+.contactsection {
+  display: block
+}
+

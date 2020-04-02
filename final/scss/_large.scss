@@ -1,0 +1,10 @@
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    li {
+        display: block;
+    }
+    li:first-child {
+        display: none;
+    }
+}
