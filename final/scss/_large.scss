@@ -8,3 +8,15 @@
         display: none;
     }
 }
+
+#advgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#adv1, #adv2, #adv3 {
+    display: block;
+    max-width: 300px;
+    justify-content: space-between;
+    
+}

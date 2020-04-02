@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="contentwidth headstyle">
         <a href="index.html"><img src="images/logo_white.gif" alt="logo"/></a>
         <h1>Salmon River <br />Adventures</h1>
@@ -36,29 +36,37 @@
     </header>
 
     <main class="contentwidth">
-      <section>
-        <img src="images/salmon-kayak1.jpg">
+      <section id="cta">
+        <img src="images/salmon-kayak1.jpg" />
         <h2>Call to Action</h2>
       </section>
       <section>
         <h2>Local Weather</h2>
         <p>dummy text</p>
       </section>
-      <section>
-        <img src="images/salmon-kayak1.jpg">
-        <h2>Adventure 1</h2>
-        <p>Description Text</p>
-      </section>
-      <section>
-        <img src="images/salmon-kayak1.jpg">
-        <h2>Adventure 2</h2>
-        <p>Description Text</p>
-      </section>
-      <section>
-        <img src="images/salmon-kayak1.jpg">
-        <h2>Adventure 3</h2>
-        <p>Description Text</p>
-      </section>
+      <div id="advgrid">
+        <section id="adv1">
+          <img src="images/salmon-kayak1.jpg" />
+          <div class="advdescription">
+            <h2>Adventure 1</h2>
+            <p>Description Text</p>
+          </div>
+        </section>
+        <section id="adv2">
+          <img src="images/salmon-kayak1.jpg" />
+          <div class="advdescription">
+            <h2>Adventure 2</h2>
+            <p>Description Text</p>
+          </div>
+        </section>
+        <section id="adv3">
+          <img src="images/salmon-kayak1.jpg" />
+          <div class="advdescription">
+            <h2>Adventure 3</h2>
+            <p>Description Text</p>
+          </div>
+        </section>
+      </div>
       <div class="contactsection">
         <section>
           <h2>Navigation</h2>
@@ -73,7 +81,8 @@
 
     <footer>
       <div class="contentwidth" style="text-align: center;">
-        &copy;2020 Adam J. Tan | <a href="reference.html">Reference Links</a> | Last Updated: <span id="lastupdate"></span>
+        &copy;2020 Adam J. Tan | <a href="reference.html">Reference Links</a> |
+        Last Updated: <span id="lastupdate"></span>
       </div>
     </footer>
     <script src="js/menu.js"></script>

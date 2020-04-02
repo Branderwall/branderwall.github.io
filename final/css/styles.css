@@ -473,10 +473,31 @@ nav {
 .contactsection {
   display: block; }
 
+#cta img {
+  width: 100%; }
+
+#advgrid {
+  display: block; }
+
+#adv1,
+#adv2,
+#adv3 {
+  display: block; }
+  #adv1 img,
+  #adv2 img,
+  #adv3 img {
+    width: 100%; }
+
 @media only screen and (min-width: 560px) {
   .contactsection {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+
+  #adv1, #adv2, #adv3 {
+    display: flex; }
+
+  #adv2 {
+    flex-direction: row-reverse; } }
 @media only screen and (min-width: 1028px) {
   .navigation {
     display: grid;
@@ -484,4 +505,13 @@ nav {
     .navigation li {
       display: block; }
     .navigation li:first-child {
-      display: none; } }
+      display: none; }
+
+  #advgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  #adv1, #adv2, #adv3 {
+    display: block;
+    max-width: 300px;
+    justify-content: space-between; } }

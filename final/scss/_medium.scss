@@ -4,3 +4,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  #adv1, #adv2, #adv3 {
+    display: flex;
+  }
+
+  #adv2 {
+    flex-direction: row-reverse;
+  }

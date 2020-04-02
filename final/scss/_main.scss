@@ -102,6 +102,24 @@ nav {
 }
 
 .contactsection {
-  display: block
+  display: block;
 }
 
+#cta {
+  img {
+    width: 100%;
+  }
+}
+
+#advgrid {
+  display: block;
+}
+
+#adv1,
+#adv2,
+#adv3 {
+  display: block;
+  img {
+    width: 100%;
+  }
+}
