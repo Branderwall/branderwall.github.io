@@ -14,6 +14,9 @@ header {
 
 footer {
   padding: 1rem 0;
+  a {
+    color: $white;
+  }
 }
 
 h1,
@@ -36,6 +39,7 @@ body {
 
 nav {
   text-align: center;
+  background-color: $darkBlue;
   ul {
     display: block;
     list-style: none;
@@ -78,15 +82,19 @@ nav {
       padding: 1rem;
     }
     a:hover {
-      background-color: $darkBlue;
+      background-color: $blue;
     }
     a:active {
-      background-color: $darkBlue;
+      background-color: $blue;
     }
   }
   li:first-child {
     display: block;
   }
+}
+
+.currentpage {
+  background-color: $blue;
 }
 
 .responsive li {

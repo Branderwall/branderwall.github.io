@@ -402,6 +402,8 @@ header {
 
 footer {
   padding: 1rem 0; }
+  footer a {
+    color: #ffffff; }
 
 h1,
 h2,
@@ -419,7 +421,8 @@ body {
   font-family: "Roboto", sans-serif; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  background-color: #0D2965; }
   nav ul {
     display: block;
     list-style: none; }
@@ -455,11 +458,14 @@ nav {
       text-align: center;
       padding: 1rem; }
     .navigation li a:hover {
-      background-color: #0D2965; }
+      background-color: #315195; }
     .navigation li a:active {
-      background-color: #0D2965; }
+      background-color: #315195; }
   .navigation li:first-child {
     display: block; }
+
+.currentpage {
+  background-color: #315195; }
 
 .responsive li {
   display: block; }
