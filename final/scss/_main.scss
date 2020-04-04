@@ -24,13 +24,13 @@ h2,
 h3,
 h4,
 h5,
-h5 {
+h6 {
   font-family: "Permanent Marker", cursive;
   font-weight: 100;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 body {
@@ -93,6 +93,10 @@ nav {
   }
 }
 
+.pagetitle {
+  text-align: center;
+}
+
 .currentpage {
   background-color: $blue;
 }
@@ -101,14 +105,14 @@ nav {
   display: block;
 }
 
-.contactsection {
-  display: block;
-}
-
 #cta {
   img {
     width: 100%;
   }
+}
+
+#localweather {
+  text-align: center;
 }
 
 #advgrid {
@@ -122,4 +126,56 @@ nav {
   img {
     width: 100%;
   }
+}
+
+.imgframe {
+  width: 100%;
+}
+
+.col2container {
+  display: block;
+}
+
+.col2 {
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+form {
+  display: grid;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  padding: 0 2em;
+}
+
+form label {
+  display: grid;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+form input,
+select,
+textarea {
+  border-radius: 5px;
+  margin-top: 0.5em;
+  padding: 0.75em;
+}
+
+.requiredform {
+  color: #b80000;
+  font-weight: bold;
+}
+
+#submitform {
+  height: 3em;
+  background-color: $green;
+  color: $white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#formkey {
+  text-align: right;
 }

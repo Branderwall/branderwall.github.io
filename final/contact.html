@@ -36,12 +36,54 @@
     </header>
 
     <main class="contentwidth">
-     
+      <h1 class="pagetitle">Contact Us</h1>
+      <div class="col2container">
+      <div class="col2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.575081082509!2d-116.31988964892562!3d45.41790754444963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c5695ed5fae5%3A0x837cd0558ffd520c!2s1000%20S%20Main%20St%2C%20Riggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1585881037149!5m2!1sen!2sus" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="col2">
+      <form id="contactform">
+        <p id="formkey"><span class="requiredform">*</span> Required Fields</p>
+        <label for="fullname">
+          <span>Full Name <span class="requiredform">*</span></span>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            pattern="[A-Za-z ]{5,}\w"
+            required
+          />
+        </label>
+        <label for="email">
+          <span>Email <span class="requiredform">*</span></span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+        </label>
+
+        <label for="comments">
+          Message
+          <textarea id="comments" name="comments" rows="5"></textarea>
+        </label>
+        <input
+          type="submit"
+          id="submitform"
+          name="submitform"
+          value="Submit"
+        />
+      </form>
+    </div>
+    </div>
     </main>
 
     <footer>
       <div class="contentwidth" style="text-align: center;">
-        &copy;2020 Adam J. Tan | <a href="reference.html">Reference Links</a> | Last Updated: <span id="lastupdate"></span>
+        &copy;2020 Adam J. Tan | <a href="reference.html">Reference Links</a> |
+        Last Updated: <span id="lastupdate"></span>
       </div>
     </footer>
     <script src="js/menu.js"></script>

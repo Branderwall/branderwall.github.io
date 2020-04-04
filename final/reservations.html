@@ -36,7 +36,74 @@
     </header>
 
     <main class="contentwidth">
-     
+        <h1 class="pagetitle">Reservations</h1>
+        <table>
+            <tr>
+                <td>
+                    This is a table
+                </td>
+            </tr>
+        </table>
+
+    <h2 class="pagetitle">Registration</h2>
+
+    <form id="stormform" action="thanks.html">
+        <p id="formkey">
+          <span class="requiredform">*</span> Required fields
+        </p>
+        <label for="fullname">
+          <span>Full Name <span class="requiredform">*</span></span>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            pattern="[A-Za-z ]{5,}\w"
+            required
+          />
+        </label>
+        <label for="email">
+            <span>Email <span class="requiredform">*</span></span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+        </label>
+        <label for="phone">
+          <span>Phone number <span class="requiredform">*</span></span>
+          <input type="tel" id="phone" name="phone" required />
+        </label>
+        <label for="adventuredate">
+          Date of Adventure
+          <input type="date" id="adventuredate" name="adventuredate" />
+        </label>
+        
+        <label for="adventureselect">
+          Choose your adventure
+          <select id="adventureselect" name="adventureselect">
+            <option selected disabled>Select Adventure...</option>
+            <option value="adv1">Adv1</option>
+            <option value="adv2">Adv2</option>
+            <option value="adv3">Adv3</option>
+          </select>
+        </label>
+        
+        <label for="comments">
+          Questions and Comments
+          <textarea id="comments" name="comments" rows="6"></textarea>
+        </label>
+        <input
+          type="submit"
+          id="submitform"
+          name="submitform"
+          value="Make Reservation"
+        />
+      </form>
+
+
+
     </main>
 
     <footer>
