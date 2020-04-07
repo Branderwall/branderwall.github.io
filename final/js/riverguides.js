@@ -36,7 +36,6 @@ fetch(fetchRequest)
       advitem.appendChild(imgframe);
       imgframe.appendChild(img);
       advitem.appendChild(desc);
-      desc.appendChild(img);
       desc.appendChild(name);
       desc.appendChild(cert);
       desc.appendChild(exp);
