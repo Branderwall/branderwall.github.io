@@ -7,7 +7,7 @@ fetch(fetchRequest)
   .then(function (guideObject) {
     let guides = guideObject["guides"];
 
-    let grid = document.createElement("div");
+    console.log("river dancing");
 
     guides.forEach((guide) => {
       let advitem = document.createElement("section");
@@ -20,12 +20,12 @@ fetch(fetchRequest)
       let email = document.createElement("p");
       let bio = document.createElement("p");
 
-      advitem.setAttribute("class") = "advitem";
-      imgframe.setAttribute("class") = "imgframe";
-      desc.setAttribute("class") = "advdescription";
+      advitem.setAttribute("class", "advitem");
+      imgframe.setAttribute("class", "imgframe");
+      desc.setAttribute("class", "advdescription");
 
-      img.setAttribute("src") = `images/${guide.img}-500.jpg`;
-      img.setAttribute("alt") = guide.name;
+      img.setAttribute("src", `images/${guide.image}-500.jpg`);
+      img.setAttribute("alt", guide.name);
 
       name.textContent = guide.name;
       cert.textContent = guide.cert;
