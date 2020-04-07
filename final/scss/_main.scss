@@ -113,19 +113,25 @@ nav {
 
 #localweather {
   text-align: center;
+  background-color: $darkBlue;
+  color: $white;
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-#advgrid {
+.advgrid {
   display: block;
 }
 
-#adv1,
-#adv2,
-#adv3 {
+.advitem {
   display: block;
   img {
     width: 100%;
   }
+}
+
+.advdescription {
+  padding: 0 1rem;
 }
 
 .imgframe {
@@ -138,6 +144,11 @@ nav {
 
 .col2 {
   padding: 1rem;
+}
+
+.wcol1,
+.wcol2,
+.col2 {
   width: 90%;
   margin: auto;
 }
@@ -168,14 +179,47 @@ textarea {
   font-weight: bold;
 }
 
-#submitform {
+.herobtn {
+  text-align: center;
+  margin-top: -8rem;
+  margin-bottom: 5rem;
+}
+
+.greenbtn {
   height: 3em;
   background-color: $green;
   color: $white;
   font-weight: bold;
   font-size: 1.5em;
+  border-radius: 15px;
+  border: 1px solid $white;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 20px 10px $white;
 }
 
 #formkey {
   text-align: right;
+}
+
+#status {
+  text-transform: capitalize;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 500px;
+}
+
+th,
+td {
+  border: 1px solid $blue;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 1rem;
+}
+
+th {
+  background-color: $darkBlue;
+  color: $white;
 }

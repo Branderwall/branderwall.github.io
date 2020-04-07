@@ -28,7 +28,9 @@
         <ul class="contentwidth navigation">
           <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
           <li><a href="index.html">Home</a></li>
-          <li><a class="currentpage" href="reservations.html">Reservations</a></li>
+          <li>
+            <a class="currentpage" href="reservations.html">Reservations</a>
+          </li>
           <li><a href="riverguides.html">River Guides</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -36,21 +38,42 @@
     </header>
 
     <main class="contentwidth">
-        <h1 class="pagetitle">Reservations</h1>
-        <table>
-            <tr>
-                <td>
-                    This is a table
-                </td>
-            </tr>
-        </table>
+      <h1 class="pagetitle">Reservations</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Length</th>
+            <th>Skill Level</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day Trip</td>
+            <td>8 hours</td>
+            <td>Beginning</td>
+            <td>$20</td>
+          </tr>
+          <tr>
+            <td>Weekend Warrior</td>
+            <td>2 Days</td>
+            <td>Intermediate</td>
+            <td>$40</td>
+          </tr>
+          <tr>
+            <td>Wonder Week</td>
+            <td>5 Days</td>
+            <td>Expert</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h2 class="pagetitle">Registration</h2>
+      <h2 class="pagetitle">Registration</h2>
 
-    <form id="stormform" action="thanks.html">
-        <p id="formkey">
-          <span class="requiredform">*</span> Required fields
-        </p>
+      <form id="stormform" action="thanks.html">
+        <p id="formkey"><span class="requiredform">*</span> Required fields</p>
         <label for="fullname">
           <span>Full Name <span class="requiredform">*</span></span>
           <input
@@ -62,7 +85,7 @@
           />
         </label>
         <label for="email">
-            <span>Email <span class="requiredform">*</span></span>
+          <span>Email <span class="requiredform">*</span></span>
           <input
             type="email"
             id="email"
@@ -79,17 +102,17 @@
           Date of Adventure
           <input type="date" id="adventuredate" name="adventuredate" />
         </label>
-        
+
         <label for="adventureselect">
           Choose your adventure
           <select id="adventureselect" name="adventureselect">
             <option selected disabled>Select Adventure...</option>
-            <option value="adv1">Adv1</option>
-            <option value="adv2">Adv2</option>
-            <option value="adv3">Adv3</option>
+            <option value="adv1">Day Trip</option>
+            <option value="adv2">Weekend Warrior</option>
+            <option value="adv3">Wonder Week</option>
           </select>
         </label>
-        
+
         <label for="comments">
           Questions and Comments
           <textarea id="comments" name="comments" rows="6"></textarea>
@@ -97,18 +120,17 @@
         <input
           type="submit"
           id="submitform"
+          class="greenbtn"
           name="submitform"
           value="Make Reservation"
         />
       </form>
-
-
-
     </main>
 
     <footer>
       <div class="contentwidth" style="text-align: center;">
-        &copy;2020 Adam J. Tan | <a href="reference.html">Reference Links</a> | Last Updated: <span id="lastupdate"></span>
+        &copy;2020 Adam J. Tan | <a href="reference.html">Reference Links</a> |
+        Last Updated: <span id="lastupdate"></span>
       </div>
     </footer>
     <script src="js/menu.js"></script>

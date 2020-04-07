@@ -13,23 +13,12 @@
   padding: 0;
 }
 
-.col2container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.col2 {
-  max-width: 500px;
-}
-
-#advgrid {
+.advgrid {
   display: flex;
   justify-content: space-between;
 }
 
-#adv1,
-#adv2,
-#adv3 {
+.advitem {
   display: block;
   max-width: 300px;
 }

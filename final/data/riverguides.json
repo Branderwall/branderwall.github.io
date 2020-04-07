@@ -1,0 +1,27 @@
+{
+    "guides" : [
+        {
+            "name" : "Jason Stevens",
+            "image" : "jason",
+            "email" : "jason@salmonriveradventures.com",
+            "cert" : "Expert",
+            "exp" : "10",
+            "bio" : "Jason's greatest passion is immersing himself in nature. He started rafting at an early age and it continues to be one of his favorite outdoor activities. Jason has a goal to raft down all the major rivers of the world and has been making steady progress on it. When he's not out on his own adventures, Jason enjoys sharing his passion with other enthusiastic adventurers."
+        },
+        {
+            "name" : "Jenny Whitcomb",
+            "image" : "jenny",
+            "email" : "jenny@salmonriveradventures.com",
+            "cert" : "Expert",
+            "exp" : "4",
+            "bio" : "Jenny is the heart and soul of our river guides. She loves to introduce newcomers to rafting and she is really good with kids. Her bubbly personality is perfect for putting people at ease and making sure everyone has a good time."
+        },
+        {
+            "name" : "Marc Johnson",
+            "image" : "marc",
+            "email" : "marc@salmonriveradventures.com",
+            "cert" : "Expert",
+            "bio" : "Marc is the newest member of our river guides, but he is by no means new to the sport. He enjoys rafting as well as competitive kayaking. Marc has been competing in various water sports since he was 12 years old."
+        }
+    ]
+}

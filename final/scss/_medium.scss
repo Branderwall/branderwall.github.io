@@ -1,14 +1,36 @@
-#adv1,
-#adv2,
-#adv3 {
+
+
+.advitem {
   display: flex;
+  img {
+    width: 300px;
+  }
+}
+
+.advitem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.col2container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col2 {
+  max-width: 500px;
+}
+
+.wcol1 {
+  max-width: 500px;
+  text-align: right;
+}
+
+.wcol2 {
+  max-width: 500px;
+  text-align: left;
 }
 
 .imgframe {
-  max-width: 300px;
+  width: 100%;
   padding: 1rem;
-}
-
-#adv2 {
-  flex-direction: row-reverse;
 }

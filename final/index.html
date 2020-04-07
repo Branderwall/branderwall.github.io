@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="cityid" content="5594474" />
+    <meta name="cityname" content="Grangeville" />
     <title>Salmon River Adventures | Home</title>
     <meta
       name="descrpition"
@@ -21,7 +23,7 @@
   <body>
     <header id="top">
       <div class="contentwidth headstyle">
-        <a href="index.html"><img src="images/logo_white.gif" alt="logo"/></a>
+        <a href="index.html"><img src="images/logo_white.gif" alt="logo" /></a>
         <h1>Salmon River<br />Adventures</h1>
       </div>
       <nav class="fullwidth">
@@ -37,39 +39,63 @@
 
     <main class="contentwidth">
       <section id="cta">
-        <img src="images/salmon-kayak1.jpg" />
-        <h2>Call to Action</h2>
+        <img src="images/rune-haugseng-PMgmimuR0Kg-unsplash.jpg" />
+        <div class="herobtn">
+          <a href="reservations.html">
+            <button class="greenbtn">
+              Make a Reservation
+            </button>
+          </a>
+        </div>
       </section>
       <section id="localweather">
-        <h2>Local Weather</h2>
-        <p>dummy text</p>
+        <div class="weathersummary">
+          <h2>Local Weather</h2>
+          <div class="col2container">
+            <div class="wcol1">
+              <p>Condition: <span id="status"></span></p>
+              <p>Temperature: <span id="temp"></span> &deg;F</p>
+              <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
+            </div>
+            <div class="wcol2">
+              <p>Humidity: <span id="humidity"></span>%</p>
+              <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <div id="advgrid">
-        <section id="adv1">
+      <div class="advgrid">
+        <section class="advitem">
           <div class="imgframe">
             <img src="images/salmon-kayak1.jpg" />
           </div>
           <div class="advdescription">
-            <h2>Adventure 1</h2>
-            <p>Description Text</p>
+            <h2>Day Trip</h2>
+            <p>
+              Ready to get your feet wet and enjoy the world of river rafting? Spend a whole day on a leisurely tour of the beautiful Salmon River. No prior experience needed.
+            </p>
           </div>
         </section>
-        <section id="adv2">
+        <section class="advitem">
           <div class="imgframe">
             <img src="images/salmon-kayak1.jpg" />
           </div>
           <div class="advdescription">
-            <h2>Adventure 2</h2>
-            <p>Description Text</p>
+            <h2>Weekend Warrior</h2>
+            <p>
+              Time for a weekend escape! Enjoy a fun-filled overnight trip down the Salmon River. Experience the scenic landscape and enjoy a night under the stars. Rafting experience recommended. Meals provided.
+            </p>
           </div>
         </section>
-        <section id="adv3">
+        <section class="advitem">
           <div class="imgframe">
             <img src="images/salmon-kayak1.jpg" />
           </div>
           <div class="advdescription">
-            <h2>Adventure 3</h2>
-            <p>Description Text</p>
+            <h2>Wonder Week</h2>
+            <p>
+              You are not the average rafter. You want to explore all the beauty and secrest the Salmon River has to offer. Travel down the length of Salmon River for a 5 day, 4 night experience. Rafting experience required.
+            </p>
           </div>
         </section>
       </div>
@@ -93,5 +119,6 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/lastupdate.js"></script>
+    <script src="js/weatherapi.js"></script>
   </body>
 </html>
