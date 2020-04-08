@@ -556,7 +556,7 @@ textarea {
 table {
   margin: auto;
   border-collapse: collapse;
-  width: 500px; }
+  max-width: 500px; }
 
 th,
 td {
@@ -567,6 +567,10 @@ td {
 
 th {
   background-color: #0D2965;
+  color: #ffffff; }
+
+.whitelink {
+  text-decoration: none;
   color: #ffffff; }
 
 @media only screen and (min-width: 560px) {

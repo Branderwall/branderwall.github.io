@@ -208,7 +208,7 @@ textarea {
 table {
   margin: auto;
   border-collapse: collapse;
-  width: 500px;
+  max-width: 500px;
 }
 
 th,
@@ -221,5 +221,11 @@ td {
 
 th {
   background-color: $darkBlue;
+  color: $white;
+}
+
+
+.whitelink {
+  text-decoration: none;
   color: $white;
 }
