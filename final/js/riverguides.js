@@ -1,6 +1,5 @@
 let fetchRequest = "https://branderwall.github.io/final/data/riverguides.json";
 
-
 let mediumWidth = "560px";
 
 fetch(fetchRequest)
