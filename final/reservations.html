@@ -71,7 +71,7 @@
         </tbody>
       </table>
 
-      <h2 class="pagetitle">Registration</h2>
+      <h2 class="pagetitle">Registration Form</h2>
 
       <form id="stormform" action="thanks.html">
         <p id="formkey"><span class="requiredform">*</span> Required fields</p>
@@ -96,17 +96,17 @@
           />
         </label>
         <label for="phone">
-          <span>Phone number <span class="requiredform">*</span></span>
-          <input type="tel" id="phone" name="phone" required />
+          <span>Phone number</span>
+          <input type="tel" id="phone" name="phone" />
         </label>
         <label for="adventuredate">
-          Date of Adventure
-          <input type="date" id="adventuredate" name="adventuredate" />
+          <span>Date of Adventure <span class="requiredform">*</span></span>
+          <input type="date" id="adventuredate" name="adventuredate" required />
         </label>
 
         <label for="adventureselect">
-          Choose your adventure
-          <select id="adventureselect" name="adventureselect">
+          <span>Choose your adventure <span class="requiredform">*</span></span>
+          <select id="adventureselect" name="adventureselect" required>
             <option selected disabled>Select Adventure...</option>
             <option value="adv1">Day Trip</option>
             <option value="adv2">Weekend Warrior</option>

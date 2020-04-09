@@ -1,5 +1,8 @@
 let fetchRequest = "https://branderwall.github.io/final/data/riverguides.json";
 
+
+let mediumWidth = "560px";
+
 fetch(fetchRequest)
   .then(function (response) {
     return response.json();
@@ -7,12 +10,12 @@ fetch(fetchRequest)
   .then(function (guideObject) {
     let guides = guideObject["guides"];
 
-    console.log("river dancing");
-
     guides.forEach((guide) => {
       let advitem = document.createElement("section");
       let imgframe = document.createElement("div");
       let desc = document.createElement("div");
+      let pic = document.createElement("picture");
+      let source = document.createElement("source");
       let img = document.createElement("img");
       let name = document.createElement("h2");
       let cert = document.createElement("p");
@@ -24,7 +27,9 @@ fetch(fetchRequest)
       imgframe.setAttribute("class", "imgframe");
       desc.setAttribute("class", "advdescription");
 
-      img.setAttribute("src", `images/${guide.image}-500.jpg`);
+      source.setAttribute("media", `(max-width: ${mediumWidth}`);
+      source.setAttribute("srcset", `images/${guide.image}-500.jpg`);
+      img.setAttribute("src", `images/${guide.image}-300.jpg`);
       img.setAttribute("alt", guide.name);
 
       name.textContent = guide.name;
@@ -34,7 +39,9 @@ fetch(fetchRequest)
       bio.textContent = guide.bio;
 
       advitem.appendChild(imgframe);
-      imgframe.appendChild(img);
+      imgframe.appendChild(pic);
+      pic.appendChild(source);
+      pic.appendChild(img);
       advitem.appendChild(desc);
       desc.appendChild(name);
       desc.appendChild(cert);

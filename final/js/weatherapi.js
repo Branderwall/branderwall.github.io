@@ -9,6 +9,7 @@ fetch(weatherapiURL)
   .then(response => response.json())
   .then(jsObject => {
     let status = jsObject.weather[0].description;
+    let feel = jsObject.main.feels_like.toFixed(0);
     let temp = jsObject.main.temp.toFixed(0);
     let humidity = jsObject.main.humidity;
     let windspeed = jsObject.wind.speed;
@@ -27,4 +28,5 @@ fetch(weatherapiURL)
     document.getElementById("humidity").textContent = humidity;
     document.getElementById("windspeed").textContent = windspeed;
     document.getElementById("windchill").textContent = windchill;
+    document.getElementById("feel").textContent = feel;
   });

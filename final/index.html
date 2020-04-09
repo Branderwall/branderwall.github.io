@@ -41,7 +41,11 @@
 
     <main class="contentwidth">
       <section id="cta">
-        <img src="images/rune-haugseng-PMgmimuR0Kg-unsplash.jpg" />
+        <picture>
+          <source media="(max-width: 560px)" srcset="images/wildrapids-500.jpg" />
+          <source media="(max-width: 1028px)" srcset="images/wildrapids-700.jpg" />
+          <img src="images/wildrapids-1000.jpg" alt="Rafters paddling in a white spray of water" />
+        </picture>
         <div class="herobtn">
           <a href="reservations.html">
             <button class="greenbtn">
@@ -62,6 +66,7 @@
             <div class="wcol2">
               <p>Humidity: <span id="humidity"></span>%</p>
               <p>Wind Speed: <span id="windspeed"></span> mph</p>
+              <p>Feels Like: <span id="feel"></span> &deg;F</p>
             </div>
           </div>
         </div>
@@ -69,7 +74,10 @@
       <div class="advgrid">
         <section class="advitem">
           <div class="imgframe">
-            <img src="images/happygroup-500.jpg" />
+            <picture>
+              <source media="(max-width: 560px)" srcset="images/happygroup-500.jpg" />
+              <img src="images/happygroup-300.jpg" alt="Rafters posing in boat" />
+            </picture>
           </div>
           <div class="advdescription">
             <h2>Day Trip</h2>
@@ -80,7 +88,10 @@
         </section>
         <section class="advitem">
           <div class="imgframe">
-            <img src="images/rapidgroup-500.jpg" />
+            <picture>
+              <source media="(max-width: 560px)" srcset="images/rapidgroup-500.jpg" />
+              <img src="images/rapidgroup-300.jpg" alt="Rafters cheering in boat" />
+            </picture>
           </div>
           <div class="advdescription">
             <h2>Weekend Warrior</h2>
@@ -91,7 +102,10 @@
         </section>
         <section class="advitem">
           <div class="imgframe">
-            <img src="images/guidegroup-500.jpg" />
+            <picture>
+              <source media="(max-width: 560px)" srcset="images/guidegroup-500.jpg" />
+              <img src="images/guidegroup-300.jpg" alt="Rafters charging through rapids" />
+            </picture>
           </div>
           <div class="advdescription">
             <h2>Wonder Week</h2>
