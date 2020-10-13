@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+$sidebar-blue: #6495ed;
+$background-yellow: #faebd7;
+$active-yellow: #deb887;
+$accent-gray: #808080;
+
+@mixin flex-container() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
+
+header {
+  background-color: $sidebar-blue;
+  color: $background-yellow;
+  text-align: right;
+  padding: 2em;
+  h1 a {
+    color: $background-yellow;
+    text-decoration: none;
+  }
+}
+
+main {
+  background-color: $background-yellow;
+  padding: 1em;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 2em;
+  margin: 2em 1em;
+  @include box-shadow(3px 3px 3px $accent-gray);
+}
+
+h1,
+h2 {
+  font-family: "Lora";
+  font-size: 2em;
+}
+
+nav {
+  a,
+  a:visited {
+    color: $background-yellow;
+    text-decoration: none;
+  }
+  a:active {
+    color: $active-yellow;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  ul li {
+    list-style: none;
+    line-height: 2em;
+    font-weight: bold;
+  }
+}
+
+main {
+  a,
+  a:visited {
+    color: $sidebar-blue;
+    text-decoration: none;
+  }
+  a:active {
+    color: $active-yellow;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  a,
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:active {
+    color: $active-yellow;
+  }
+  a:hover {
+    color: $sidebar-blue;
+    text-decoration: underline;
+  }
+}
+
+figure {
+    @include flex-container();
+
+  justify-content: center;
+}
+
+.post-date {
+  color: $accent-gray;
+}
+
+.post-content {
+  margin: auto;
+}
+
+@media only screen and (min-width: 750px) {
+  body div {
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  header {
+    flex: 1;
+  }
+
+  main {
+    flex: 3;
+  }
+}
