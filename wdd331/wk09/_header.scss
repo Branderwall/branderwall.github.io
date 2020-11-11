@@ -1,0 +1,54 @@
+header {
+    background-color: $byui-blue;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.site-banner {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "search search"
+    "site-banner__left site-banner_right";
+    
+}
+
+.site-banner__left {
+    grid-area: "site-banner_left";
+    order: 2;
+}
+
+.site-banner__right{
+    grid-area: "site-banner_right";
+    justify-self: end;
+    font-size: 2em;
+    order: 2;
+}
+
+[role=search] {
+    display: none;
+    grid-area: search;
+    order: 1;
+    background-color: $body-font;
+    width: 100%;
+    div {
+        width: 100%;
+        padding: 0.5em;
+    }
+}
+
+.icon-byui-logo {
+    background-color: $body-font;
+    padding: 0.5em;
+    font-size: 2em;
+    align-self: center;
+    margin: auto;
+}
+
+.page-title {
+    background-color: $light-gray;
+    color: $dark-gray;
+}
