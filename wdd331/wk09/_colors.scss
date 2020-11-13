@@ -6,3 +6,16 @@ $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
 $white: #ffffff;
+
+
+.bg-blue {
+    background-color: $byui-blue;  
+}
+
+.bg-black {
+    background-color: $body-font;
+}
+
+.bg-dk-gray {
+    background-color: $dark-gray;
+}

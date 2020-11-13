@@ -3,6 +3,8 @@
 @import 'typography';
 @import 'icons';
 @import 'header';
+@import 'tables';
+@import 'layout';
 
 $sm-break: 48em;
 
@@ -27,4 +29,119 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+a {
+  text-decoration:none;
+  color: $link-blue;
+}
+
+main {
+  color: $body-font;
+  font-family: "BYUI Open Sans";
+  padding: 0 0.5em;
+}
+
+/* -------- Call Out Box -------------------*/
+
+.emergency-headline {
+  background-color: $body-font;
+  color: $white;
+  padding: 1em;
+  text-align: center;
+}
+
+
+/*-------------- Buttons ---------------*/
+
+.btn {
+  display: inline-block;
+  font-family: "BYUI Open Sans";
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+}
+
+
+/*-------------- Articles ---------------*/
+
+.news-article {
+  border-top: 1px solid $dark-gray;
+  padding: 1em 0;
+}
+
+.article-date {
+  text-transform: to-upper-case($string: "");
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.article-headline {
+  color: $link-blue;
+}
+
+
+/* --------------- Gallery --------------*/
+
+.gallery-box {
+  border: 1px solid $dark-gray;
+  width: 100%;
+  margin: auto;
+  img {
+    width: 100%;
+  }
+}
+
+
+/*---------------- Spacing -----------*/
+
+.content-padding {
+  margin-bottom: 2em;
+}
+
+
+/*-------------- Picture Article --------*/
+
+.picture-article {
+  border: 1px solid $dark-gray;
+  border-radius: 5px;
+}
+
+.picture-action-box {
+  padding: 0.25em 0.5em;
+}
+
+/*-------------- Links ----------------*/
+
+.link-arrow:before {
+  content: "\1433";
+  float: right;
+  font-family: "BYUI Open Sans";
+  margin-right: 0.5em;
+}
+
+.menu-link {
+  padding: 0.3em;
+}
+
+/*-------------------- Dropdown -----------*/
+
+.information-dropdown {
+  background-color: $light-gray;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5em;
+  border: 1px solid $dark-gray;
+  border-radius: 5px;
+}
+
+.drop-arrow::before {
+  content: "\23F7";
+  float: right;
+  font-family: "BYUI Open Sans";
+  margin-right: 0.5em;
 }

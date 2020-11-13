@@ -1,0 +1,16 @@
+
+
+.flt-right {
+    float: right;
+}
+
+.flt-left {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
