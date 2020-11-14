@@ -1,13 +1,8 @@
-@import 'reset';
-@import 'colors';
-@import 'typography';
-@import 'icons';
-@import 'header';
-@import 'tables';
-@import 'layout';
-
-$sm-break: 48em;
-
+@import "reset";
+@import "colors";
+@import "typography";
+@import "icons";
+@import "header";
 
 // Utility classes
 *,
@@ -17,9 +12,11 @@ $sm-break: 48em;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -32,14 +29,63 @@ img {
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
   color: $link-blue;
 }
 
 main {
+  display: grid;
+  gap: 2em;
+  justify-content: space-evenly;
   color: $body-font;
   font-family: "BYUI Open Sans";
   padding: 0 0.5em;
+}
+
+/*-------- Layout ----------*/
+
+$sm-break: 48em;
+
+.flt-right {
+  float: right;
+}
+
+.flt-left {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.lg-layout-row {
+  display: grid;
+  gap: 2em;
+}
+
+.lg-layout-column {
+  display: grid;
+  gap: 2em;
+  align-content: flex-start;
+}
+
+.content-width {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.img-sm {
+  display: block;
+}
+
+.img-lg {
+  display: none;
 }
 
 /* -------- Call Out Box -------------------*/
@@ -51,6 +97,11 @@ main {
   text-align: center;
 }
 
+.hero {
+  img {
+    width: 100%;
+  }
+}
 
 /*-------------- Buttons ---------------*/
 
@@ -66,12 +117,58 @@ main {
   margin-bottom: 0.5em;
 }
 
+/*------------------ Special Content ---------------*/ 
+
+
+.date-entry {
+  display: grid;
+  border-bottom: 1px solid $dark-gray;
+  grid-template-columns: 3fr 1fr 8fr;
+  text-decoration: none;
+  color: $body-font;
+  font-size: smaller;
+}
+
+.link-list-headline {
+  color: $white;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.link-list-item {
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+.link-list-item:hover {
+  background-color: darken($light-gray, 10%);
+  color: $link-blue;
+}
+
+.link-list-date {
+  font-weight: bold;
+}
+
+
+.box-link-list {
+ 
+  a {
+      background-color: $light-gray;
+      line-height: 1em;
+      display: block;
+      border-right: 1px solid $dark-gray;
+      border-bottom: 1px solid $dark-gray;
+      border-left: 1px solid $dark-gray;
+  }
+}
 
 /*-------------- Articles ---------------*/
 
 .news-article {
+  display: grid;
+  gap: 1.5em;
   border-top: 1px solid $dark-gray;
-  padding: 1em 0;
+  padding: 1em;
 }
 
 .article-date {
@@ -82,10 +179,26 @@ main {
 
 .article-headline {
   color: $link-blue;
+  line-height: 1em;
+  margin: 1em 0;
 }
 
+.article-img {
+  display: none;
+  float: left;
+}
+
+.article-content {
+  display:block;
+}
 
 /* --------------- Gallery --------------*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
 
 .gallery-box {
   border: 1px solid $dark-gray;
@@ -96,19 +209,20 @@ main {
   }
 }
 
-
 /*---------------- Spacing -----------*/
 
 .content-padding {
   margin-bottom: 2em;
 }
 
-
 /*-------------- Picture Article --------*/
 
 .picture-article {
   border: 1px solid $dark-gray;
   border-radius: 5px;
+  img {
+    width: 100%;
+  }
 }
 
 .picture-action-box {
@@ -118,7 +232,7 @@ main {
 /*-------------- Links ----------------*/
 
 .link-arrow:before {
-  content: "\1433";
+  content: "\276F";
   float: right;
   font-family: "BYUI Open Sans";
   margin-right: 0.5em;
@@ -144,4 +258,38 @@ main {
   float: right;
   font-family: "BYUI Open Sans";
   margin-right: 0.5em;
+}
+
+/*--------------- Media Queries ------------*/
+
+@media (min-width: $sm-break) {
+  .lg-layout-row {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+  }
+
+  .page-title {
+    text-align: left;
+  }
+
+  .img-sm {
+    display: none;
+  }
+  
+  .img-lg {
+    display: block;
+  }
+
+  .article-img {
+    display: inline;
+    max-width: 150px;
+  }
+
+  .news-article {
+    grid-template-columns: 1fr 3fr;
+  }
 }
