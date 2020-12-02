@@ -1,10 +1,87 @@
 @import 'variables';
 @import 'node_modules/bootstrap/scss/bootstrap';
-// @import 'node_modules/bulma/bulma';
-body {
-  background-color: $body-bg-color;
+
+$fa-font-path:"../../node_modules/font-awesome/fonts";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+nav a{
+  color: white;
 }
 
-.navbar-item {
-  color: #09b8e9;
+nav a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.jumbotron {
+  text-align: center;
+  background: none;
+}
+
+.sectionLight {
+  background-color: #eceeef;
+  padding: 2rem;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+
+.coolStuffWrapper {
+  margin-top: 20px;
+}
+
+button.coolStuffBtn {
+  background-color: red;
+  color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+h5.modal-title {
+  margin: auto;
+}
+
+.modalFormWrapper {
+  padding: 2rem;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  display: block;
+  margin: 15px auto 20px auto;
+  width: 50%;
+}
+
+.footerImg {
+  padding: 15px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-google-plus-square {
+  color: #c32f10;
+}
+
+.fa-instagram {
+  color: #ffffff;
+}
+
+.fa {
+  margin: 10px;
+}
+
+.socialWrapper {
+  margin: auto;
 }
