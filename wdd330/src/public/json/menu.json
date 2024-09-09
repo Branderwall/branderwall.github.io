@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "title": "Destination",
+    "url": "/destination/",
+    "submenu": [
+      {
+        "title": "Alderaan",
+        "url": "/destination/?name=alderaan"
+      },
+      {
+        "title": "Bespin",
+        "url": "/destination/?name=bespin"
+      },
+      {
+        "title": "Coruscant",
+        "url": "/destination/?name=coruscant"
+      },
+      {
+        "title": "Dagobah",
+        "url": "/destination/?name=dagobah"
+      },
+      {
+        "title": "Endor",
+        "url": "/destination/?name=endor"
+      },
+      {
+        "title": "Hoth",
+        "url": "/destination/?name=hoth"
+      },
+      {
+        "title": "Tatooine",
+        "url": "/destination/?name=tatooine"
+      },
+      {
+        "title": "Yavin IV",
+        "url": "/destination/?name=yavin"
+      }
+    ]
+  },
+  {
+    "title": "About",
+    "url": "/about/"
+  }
+]
